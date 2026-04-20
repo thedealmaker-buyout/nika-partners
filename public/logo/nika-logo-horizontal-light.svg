@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 60" width="400" height="60">
+  <style>
+    .brand { font-family: 'Playfair Display', 'Times New Roman', serif; font-size: 28px; letter-spacing: 4px; fill: #FFFFFF; }
+  </style>
+  <text x="0" y="40" class="brand">NIKA</text>
+  <rect x="110" y="18" width="2.5" height="24" fill="#D4A03C"/>
+  <text x="128" y="40" class="brand">PARTNERS</text>
+</svg>

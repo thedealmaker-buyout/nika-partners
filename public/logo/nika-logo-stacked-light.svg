@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" width="240" height="160">
+  <style>
+    .brand { font-family: 'Playfair Display', 'Times New Roman', serif; letter-spacing: 4px; fill: #FFFFFF; text-anchor: middle; }
+    .top { font-size: 36px; }
+    .bot { font-size: 22px; }
+  </style>
+  <text x="120" y="60" class="brand top">NIKA</text>
+  <rect x="100" y="75" width="40" height="2" fill="#D4A03C"/>
+  <text x="120" y="110" class="brand bot">PARTNERS</text>
+</svg>
