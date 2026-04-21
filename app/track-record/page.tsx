@@ -15,91 +15,133 @@ export default function TrackRecordPage() {
           >
             TRACK RECORD
           </p>
-          <h1 className="font-heading text-[32px] md:text-[48px] text-white leading-[1.2]">
+          <h1 className="font-heading text-[28px] md:text-[48px] text-white leading-[1.2]">
             Buyouts, M&A and strategic advisory for European tech founders.
           </h1>
         </div>
       </section>
 
-      {/* Table */}
-      <section className="px-6 py-12 md:py-16">
-        <div className="max-w-6xl mx-auto bg-white rounded-xl px-6 md:px-10 py-8 md:py-10">
-          {/* Table header */}
-          <div
-            className="hidden md:grid gap-x-5 pb-4 border-b border-[#353839]"
-            style={{
-              gridTemplateColumns: "52px 1fr 100px 130px 1.4fr 1.1fr",
-            }}
-          >
-            <p className="font-body text-[13px] font-semibold text-text-dark">
-              Year
-            </p>
-            <p className="font-body text-[13px] font-semibold text-text-dark">
-              Client
-            </p>
-            <p className="font-body text-[13px] font-semibold text-text-dark">
-              Sector
-            </p>
-            <p className="font-body text-[13px] font-semibold text-text-dark">
-              Type
-            </p>
-            <p className="font-body text-[13px] font-semibold text-text-dark">
-              Description
-            </p>
-            <p className="font-body text-[13px] font-semibold text-text-dark">
-              Counterparties
-            </p>
-          </div>
-
-          {/* Table rows */}
-          {DEALS_ALL.map((deal, index) => (
+      {/* Deals list */}
+      <section className="px-4 md:px-6 py-10 md:py-16">
+        <div className="max-w-6xl mx-auto bg-white rounded-xl px-4 md:px-10 py-6 md:py-10">
+          {/* ───────── Desktop table ───────── */}
+          <div className="hidden md:block">
+            {/* Table header */}
             <div
-              key={index}
-              className="group grid grid-cols-1 md:grid-cols-none gap-y-1 md:gap-x-5 py-5 md:py-4 border-b border-[#eee] last:border-0 md:hover:bg-[#0B1A2E] md:hover:text-white transition-colors duration-300 md:-mx-4 md:px-4 md:rounded-lg cursor-default"
+              className="grid gap-x-5 pb-4 border-b border-[#353839]"
               style={{
-                gridTemplateColumns:
-                  "52px 1fr 100px 130px 1.4fr 1.1fr",
+                gridTemplateColumns: "52px 1fr 100px 130px 1.4fr 1.1fr",
               }}
             >
-              {/* Year */}
-              <p className="font-body text-[14px] text-[#555] group-hover:text-white/60 transition-colors">
-                {deal.year}
+              <p className="font-body text-[13px] font-semibold text-text-dark">
+                Year
               </p>
-
-              {/* Client */}
-              <p className="font-body text-[14px] font-semibold text-text-dark group-hover:text-white transition-colors">
-                {deal.client}
+              <p className="font-body text-[13px] font-semibold text-text-dark">
+                Client
               </p>
-
-              {/* Sector */}
-              <p className="font-body text-[11px] text-gold tracking-[0.5px] group-hover:text-gold-light transition-colors">
-                {deal.sector}
+              <p className="font-body text-[13px] font-semibold text-text-dark">
+                Sector
               </p>
-
-              {/* Type badge */}
-              <div>
-                <span
-                  className={`inline-block text-[9px] tracking-[0.5px] uppercase font-medium px-2 py-0.5 rounded whitespace-nowrap transition-colors ${
-                    deal.dealType === "Strategic Advisory"
-                      ? "bg-[#f0f0f0] text-[#888] group-hover:bg-white/10 group-hover:text-white/60"
-                      : "bg-navy-deep/10 text-navy-deep group-hover:bg-white/20 group-hover:text-white"
-                  }`}
-                >
-                  {deal.dealType}
-                </span>
-              </div>
-
-              {/* Description */}
-              <p className="font-body text-[13px] text-[#777] group-hover:text-white/70 transition-colors leading-[1.5]">
-                {deal.description}
+              <p className="font-body text-[13px] font-semibold text-text-dark">
+                Type
               </p>
-
-              {/* Counterparties */}
-              <p className="font-body text-[13px] text-[#555] group-hover:text-white/80 transition-colors">
-                {deal.counterparties || "—"}
+              <p className="font-body text-[13px] font-semibold text-text-dark">
+                Description
+              </p>
+              <p className="font-body text-[13px] font-semibold text-text-dark">
+                Counterparties
               </p>
             </div>
-          ))}
+
+            {/* Table rows */}
+            {DEALS_ALL.map((deal, index) => (
+              <div
+                key={index}
+                className="group grid gap-x-5 py-4 border-b border-[#eee] last:border-0 hover:bg-[#0B1A2E] hover:text-white transition-colors duration-300 -mx-4 px-4 rounded-lg cursor-default"
+                style={{
+                  gridTemplateColumns:
+                    "52px 1fr 100px 130px 1.4fr 1.1fr",
+                }}
+              >
+                <p className="font-body text-[14px] text-[#555] group-hover:text-white/60 transition-colors">
+                  {deal.year}
+                </p>
+                <p className="font-body text-[14px] font-semibold text-text-dark group-hover:text-white transition-colors">
+                  {deal.client}
+                </p>
+                <p className="font-body text-[11px] text-gold tracking-[0.5px] group-hover:text-gold-light transition-colors">
+                  {deal.sector}
+                </p>
+                <div>
+                  <span
+                    className={`inline-block text-[9px] tracking-[0.5px] uppercase font-medium px-2 py-0.5 rounded whitespace-nowrap transition-colors ${
+                      deal.dealType === "Strategic Advisory"
+                        ? "bg-[#f0f0f0] text-[#888] group-hover:bg-white/10 group-hover:text-white/60"
+                        : "bg-navy-deep/10 text-navy-deep group-hover:bg-white/20 group-hover:text-white"
+                    }`}
+                  >
+                    {deal.dealType}
+                  </span>
+                </div>
+                <p className="font-body text-[13px] text-[#777] group-hover:text-white/70 transition-colors leading-[1.5]">
+                  {deal.description}
+                </p>
+                <p className="font-body text-[13px] text-[#555] group-hover:text-white/80 transition-colors">
+                  {deal.counterparties || "—"}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* ───────── Mobile card list ───────── */}
+          <div className="md:hidden divide-y divide-[#eee]">
+            {DEALS_ALL.map((deal, index) => (
+              <div key={index} className="py-5 first:pt-2 last:pb-2">
+                {/* Top row: year + type badge */}
+                <div className="flex items-center justify-between mb-2">
+                  <span className="font-body text-[12px] text-[#888] font-medium tracking-wide">
+                    {deal.year}
+                  </span>
+                  <span
+                    className={`inline-block text-[9px] tracking-[0.5px] uppercase font-medium px-2 py-0.5 rounded whitespace-nowrap ${
+                      deal.dealType === "Strategic Advisory"
+                        ? "bg-[#f0f0f0] text-[#888]"
+                        : "bg-navy-deep/10 text-navy-deep"
+                    }`}
+                  >
+                    {deal.dealType}
+                  </span>
+                </div>
+
+                {/* Client name */}
+                <h3 className="font-body text-[17px] font-semibold text-text-dark leading-snug">
+                  {deal.client}
+                </h3>
+
+                {/* Sector */}
+                <p className="font-body text-[11px] text-gold tracking-[1px] uppercase mt-1">
+                  {deal.sector}
+                </p>
+
+                {/* Description */}
+                <p className="font-body text-[13.5px] text-[#555] leading-[1.6] mt-3">
+                  {deal.description}
+                </p>
+
+                {/* Counterparties */}
+                {deal.counterparties && (
+                  <div className="mt-3 pt-3 border-t border-[#f2f2f2]">
+                    <p className="font-body text-[10px] text-[#999] uppercase tracking-[1.5px] mb-1">
+                      Counterparties
+                    </p>
+                    <p className="font-body text-[13px] text-[#555]">
+                      {deal.counterparties}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
