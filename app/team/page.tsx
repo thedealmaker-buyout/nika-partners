@@ -216,7 +216,6 @@ export default function TeamPage() {
                   </p>
 
                   <CredentialsBlock member={member} />
-                  <SocialsBlock member={member} />
                 </div>
 
                 {/* ───────── Desktop alternating layout ───────── */}
