@@ -22,7 +22,7 @@ export const TESTIMONIALS = [
     quote:
       "Building a European category leader requires scale across multiple markets. The opportunity in Europe is to build governance platforms that can truly serve institutions across the continent.",
     context:
-      "DiliTrust is building a pan-European legal governance platform backed by Cathay Capital, Eurazo and BPI.",
+      "DiliTrust is building a pan-European legal governance platform backed by Cathay Capital, Eurazeo and Sagard.",
   },
   {
     name: "Maxime Bérard",
