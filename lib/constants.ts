@@ -90,7 +90,6 @@ export const DEALS_FEATURED = [
 export const DEALS_ALL = [
   { year: 2025, client: "Urbasense", dealType: "Buyout", sector: "GovTech", description: "IoT-powered smart irrigation and plant monitoring for municipalities", counterparties: "Simpliciti, IdiCo" },
   { year: 2025, client: "Powell Software", dealType: "Buyout", sector: "HR Tech", description: "Microsoft 365 digital workplace and intranet platform", counterparties: "Cathay Capital" },
-  { year: 2025, client: "LegalySpace", dealType: "Strategic Advisory", sector: "Legal Tech", description: "Secure document dematerialization and qualified electronic signature platform", counterparties: null },
   { year: 2024, client: "Aster", dealType: "Buyout", sector: "Legal Tech", description: "Venture capital firm investing in deep tech, industry and climate solutions", counterparties: "DiliTrust, Cathay Capital, Eurazeo, Sagard" },
   { year: 2024, client: "Weloop", dealType: "Strategic Advisory", sector: "Horizontal SaaS", description: "Community-powered user feedback aggregation platform for business applications", counterparties: null },
   { year: 2023, client: "TubeReach", dealType: "M&A", sector: "Digital Services", description: "Pure-play YouTube strategy agency and video campaign optimization for brands", counterparties: "Mobsuccess" },
