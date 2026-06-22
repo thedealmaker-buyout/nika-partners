@@ -176,6 +176,16 @@ export const TEAM_MEMBERS = [
     education: ["IESEG Business School"],
     featured: false,
   },
+  {
+    name: "Victor Wavrenier",
+    role: "Senior Advisor",
+    location: "Paris",
+    yearsExperience: "10+",
+    photo: "/photos/Victor.png",
+    bio: "Victor started his career in FinTech at PayPal, then joined N26 in 2013 as one of the company's earliest employees — N26 is now an $8B unicorn. He went on to found AppScho, a SaaS platform that became a leading Western European player in Higher Education, raised a Series A, and was acquired in 2021 by Ready Education (deal led by Level Equity, a NYC-based PE firm). After leading M&A and post-merger integration for four companies, Victor joined Shamrock Capital Partners, where he sources and executes fundraising and transactions in the tech sector, with a dedicated focus on EdTech, learning, and education-specialized companies.",
+    previousCompanies: ["Shamrock Capital Partners", "AppScho", "N26", "PayPal"],
+    featured: false,
+  },
 ];
 
 export const INSIGHTS_CATEGORIES = [
