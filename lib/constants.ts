@@ -177,7 +177,7 @@ export const TEAM_MEMBERS = [
     featured: false,
   },
   {
-    name: "Victor Wavrenier",
+    name: "Victor Wacrenier",
     role: "Senior Advisor",
     location: "Paris",
     yearsExperience: "10+",
