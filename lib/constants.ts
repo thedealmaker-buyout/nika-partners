@@ -170,9 +170,11 @@ export const TEAM_MEMBERS = [
     name: "Michel Baspinar",
     role: "Vice President",
     location: "Paris",
-    yearsExperience: "10+",
+    yearsExperience: "8+",
     photo: "/photos/Michel.JPG",
-    bio: "Michel focuses on large-cap technology transactions with a dedicated expertise in the telecom sector. He advises corporates and financial sponsors on strategic M&A, complex deal structuring, and cross-border consolidation across European and international markets.",
+    bio: "Michel has built his career advising technology companies, with a dedicated expertise in telecom — placing him at the heart of Nika Partners' DNA. Based in London for over five years, he brings deep cross-border experience across European and international markets, and advises corporates and financial sponsors on strategic M&A and complex deal structuring.",
+    previousCompanies: ["Lazard", "Société Générale", "Excellion Capital"],
+    education: ["Imperial College London", "Université Paris 1 Panthéon-Sorbonne"],
     featured: false,
   },
   {
