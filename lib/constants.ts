@@ -88,6 +88,7 @@ export const DEALS_FEATURED = [
 ];
 
 export const DEALS_ALL = [
+  { year: 2026, client: "Synigo", dealType: "Buyout", sector: "HR Tech", description: "Personalized digital workplace and social intranet platform built on Microsoft 365", counterparties: "Powell Software, Cathay Capital" },
   { year: 2025, client: "Urbasense", dealType: "Buyout", sector: "GovTech", description: "IoT-powered smart irrigation and plant monitoring for municipalities", counterparties: "Simpliciti, IdiCo" },
   { year: 2025, client: "Powell Software", dealType: "Buyout", sector: "HR Tech", description: "Microsoft 365 digital workplace and intranet platform", counterparties: "Cathay Capital" },
   { year: 2024, client: "Aster", dealType: "Buyout", sector: "Legal Tech", description: "Venture capital firm investing in deep tech, industry and climate solutions", counterparties: "DiliTrust, Cathay Capital, Eurazeo, Sagard" },
