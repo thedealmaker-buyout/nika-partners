@@ -167,6 +167,15 @@ export const TEAM_MEMBERS = [
     featured: true,
   },
   {
+    name: "Michel Baspinar",
+    role: "Vice President",
+    location: "Paris",
+    yearsExperience: "10+",
+    photo: "/photos/Michel.JPG",
+    bio: "Michel focuses on large-cap technology transactions with a dedicated expertise in the telecom sector. He advises corporates and financial sponsors on strategic M&A, complex deal structuring, and cross-border consolidation across European and international markets.",
+    featured: false,
+  },
+  {
     name: "Alexandre Lacroix",
     role: "Senior Advisor",
     location: "Paris",
@@ -185,6 +194,7 @@ export const TEAM_MEMBERS = [
     photo: "/photos/Victor.png",
     bio: "Victor started his career in FinTech at PayPal, then joined N26 in 2013 as one of the company's earliest employees — N26 is now an $8B unicorn. He went on to found AppScho, a SaaS platform that became a leading Western European player in Higher Education, raised a Series A, and was acquired in 2021 by Ready Education (deal led by Level Equity, a NYC-based PE firm).",
     previousCompanies: ["AppScho", "N26", "PayPal"],
+    education: ["Sup'Info", "ESCP Business School"],
     featured: false,
   },
 ];
