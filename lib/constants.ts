@@ -178,17 +178,6 @@ export const TEAM_MEMBERS = [
     featured: false,
   },
   {
-    name: "Alexandre Lacroix",
-    role: "Senior Advisor",
-    location: "Paris",
-    yearsExperience: "8+",
-    photo: "/photos/Alexandre.avif",
-    bio: "Alexandre specializes in early-stage financing and is the founder of Marengo, an advisory firm dedicated to helping technology companies raise their first institutional round. He brings a deep understanding of what institutional investors look for and guides founders through the structuring, positioning, and execution of their first serious fundraise.",
-    previousCompanies: ["Raisers Partners", "iii-financement"],
-    education: ["IESEG Business School"],
-    featured: false,
-  },
-  {
     name: "Victor Wacrenier",
     role: "Senior Advisor",
     location: "Paris",
